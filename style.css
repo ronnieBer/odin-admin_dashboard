@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;700&display=swap');
+
+:root {
+    --main-fonts: 'Roboto', sans-serif;
+
+    --primary-color: #06B6D4;
+    --secondary-color: #E2E8F0;
+    --neutral-color: #ffffff;
+    --accent-color: #F97316;
+    --p-color: #64748b;
+    --h-color: #1e293b;
+
+    --user-avatar01: url(./images/user-01.png);
+    --user-avatar02: url(./images/user-02.png);
+    --user-avatar03: url(./images/user-03.png);
+    --user-avatar04: url(./images/user-04.png);
+
+    --user-avatar01_bg: #ffc400;
+    --user-avatar02_bg: #F97316;
+    --user-avatar03_bg: #4fb9ff;
+    --user-avatar04_bg: #fa76ef;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: var(--main-fonts);
+    background-color: var(--secondary-color);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 303px auto;
+    grid-template-rows: 161px auto;
+    width: 100vw;
+    height: 100vh;
+}
