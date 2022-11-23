@@ -191,3 +191,72 @@ header {
     font-weight: 700;
 }
 /* Header End */
+
+/* Side Navbar Start */
+aside {
+    display: grid;
+    grid-template-rows: 60px auto 160px 40px;
+    grid-row: 1 / 4;
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+    padding: 20px;
+    align-items: flex-start;
+    row-gap: 20px;
+    grid-row-gap: 20px;
+
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.side-nav-title {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 10px;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.side-nav-title > [class^='material-icons'] {
+    font-size: 3.125rem;
+}
+
+.nav-top, .nav-bottom {
+    display: grid;
+    font-size: 1.2rem;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 10px 0;
+    line-height: 30px;
+}
+
+.nav-link {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    color: var(--neutral-color);
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.nav-link > [class^='material-icons'] {
+    margin-left: 15px;
+    margin-right: 22px;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    color: var(--h-color);
+}
+
+.active {
+    font-weight: 700;
+}
+
+aside p {
+    font-size: .875rem;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-weight: 300;
+}
+/* Side Navbar End */
