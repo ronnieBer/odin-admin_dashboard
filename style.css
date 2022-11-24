@@ -269,4 +269,67 @@ main {
     grid-column: 2 / 3;
     grid-row: 2 / 4;
 }
+
+/* Main Projects */
+.projects > h2, .announcement > h2, .trending > h2 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: 48px auto;
+    padding: 20px 0 20px 20px;
+    grid-column: 1 / 2;
+}
+
+.cards {
+    display: inline-grid;
+    grid-template: repeat(auto-fill, minmax(217px, 1fr)) / repeat(auto-fill, minmax(380px, 1fr));
+    gap: 20px;
+    grid-gap: 20px;
+}
+
+.project-card {
+    display: grid;
+    border-radius: 8px;
+    background-color: var(--neutral-color);
+    padding: 10px 20px;
+    border-left: 10px solid var(--accent-color);
+    align-content: space-between;
+
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-copy > h3 {
+    color: var(--h-color);
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.project-copy > p {
+    color: var(--p-color);
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.project-btn {
+    display: grid;
+    grid-template-columns: repeat(3, 25px);
+    column-gap: 15px;
+    grid-column-gap: 15px;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+}
+
+.project-link > [class^='material-icons'] {
+    color: var(--h-color);
+    font-weight: 300;
+}
+
+.project-link > [class^='material-icons']:hover {
+    color: var(--accent-color);
+}
 /* Main Contents End */
