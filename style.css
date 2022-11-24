@@ -373,4 +373,67 @@ main {
 .announcement-board hr {
     border: 0.5px solid var(--secondary-color);
 }
+
+/* Trending */
+.trending-board {
+    border-radius: 8px;
+    background-color: var(--neutral-color);
+    padding: 10px;
+
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trending-profile {
+    display: grid;
+    grid-template-columns: 50px auto;
+    justify-items: start;
+    align-items: center;
+    padding: 9px;
+    column-gap: 15px;
+    grid-column-gap: 15px;
+    text-decoration: none;
+}
+
+.trending-profile:hover .title {
+    color: var(--primary-color);
+}
+
+.trending-profile .user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.one {
+    background-image: var(--user-avatar01);
+    background-color: var(--user-avatar01_bg);
+    background-size: cover;
+}
+.two {
+    background-image: var(--user-avatar02);
+    background-color: var(--user-avatar02_bg);
+    background-size: cover;
+}
+.three {
+    background-image: var(--user-avatar03);
+    background-color: var(--user-avatar03_bg);
+    background-size: cover;
+}
+.four {
+    background-image: var(--user-avatar04);
+    background-color: var(--user-avatar04_bg);
+    background-size: cover;
+}
+
+.name {
+    font-size: .875rem;
+    font-weight: 400;
+    color: var(--h-color);
+}
+
+.title {
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--p-color);
+}
 /* Main Contents End */
