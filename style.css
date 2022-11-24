@@ -260,3 +260,13 @@ aside p {
     font-weight: 300;
 }
 /* Side Navbar End */
+
+/* Main Contents Start */
+main {
+    display: grid;
+    overflow: auto;
+    grid-template-columns: auto minmax(277px, 300px);
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
+/* Main Contents End */
