@@ -332,4 +332,45 @@ main {
 .project-link > [class^='material-icons']:hover {
     color: var(--accent-color);
 }
+
+/* Announcement */
+.bulletin-board {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 20px;
+    grid-column: 2 / 3;
+}
+
+.announcement-board {
+    border-radius: 8px;
+    background-color: var(--neutral-color);
+    padding: 10px 20px;
+    margin-bottom: 20px;
+
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-link {
+    text-decoration: none;
+}
+
+.announcement-link:hover h4 {
+    color: var(--primary-color);
+}
+
+.announcement-link > h4 {
+    color: var(--h-color);
+    margin: 10px 0;
+    font-weight: 500;
+}
+.announcement-link > p {
+    color: var(--p-color);
+    margin-bottom: 10px;
+    font-size: .875rem;
+    font-weight: 300;
+}
+
+.announcement-board hr {
+    border: 0.5px solid var(--secondary-color);
+}
 /* Main Contents End */
